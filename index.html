@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>테스트</title>
     <script type='text/javascript'>
+
         console.log('location', location);
+
+        var origin = location.origin;
         var href = location.href;
-        var href = location.href;
+        console.log('origin', origin);
+        console.log('href', href);
 
 
-        d = d.replace(/.*\/\/[^\/]*/, '');
+        // d = d.replace(/.*\/\/[^\/]*/, '');
 
-        console.log('d', d);
 
 
         // location.href = 'http://stories.pe.kr';
