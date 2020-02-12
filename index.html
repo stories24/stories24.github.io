@@ -7,25 +7,12 @@
     <title>테스트</title>
     <script type='text/javascript'>
 
-        console.log('location', location);
         var dest = "https://stories.pe.kr";
         var origin = location.origin;
         var href = location.href;
-        console.log('origin', origin);
-        console.log('href', href);
+        var destination = href.replace(origin, dest);
+        location.href = destination;
 
-        var dd = href.replace(origin, dest);
-
-        console.log('dd', dd);
-
-        // d = d.replace(/.*\/\/[^\/]*/, '');
-
-
-
-
-
-
-        // location.href = 'http://stories.pe.kr';
     </script>
 </head>
 
