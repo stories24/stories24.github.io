@@ -8,14 +8,21 @@
     <script type='text/javascript'>
 
         console.log('location', location);
-
+        var dest = "https://stories.pe.kr";
         var origin = location.origin;
         var href = location.href;
         console.log('origin', origin);
         console.log('href', href);
 
+        var dd = href.replace(origin, dest);
+
+        console.log('dd', dd);
 
         // d = d.replace(/.*\/\/[^\/]*/, '');
+
+
+
+
 
 
         // location.href = 'http://stories.pe.kr';
