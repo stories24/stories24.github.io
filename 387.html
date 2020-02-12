@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도메인 변경으로 인한 포워딩</title>
+    <script type='text/javascript'>
+        var dest = "https://stories.pe.kr";
+        var origin = location.origin;
+        var href = location.href;
+        var destination = href.replace(origin, dest);
+        location.href = destination;
+    </script>
+</head>
+
+<body>
+    도메인 변경으로 인한 포워딩
+</body>
+
+</html>
