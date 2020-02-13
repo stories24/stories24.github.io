@@ -11,7 +11,7 @@
         var dest = "https://blog.stories.pe.kr";
 
         function canonicalLink() {
-            var link = document.createElement('link');
+            var link = document.getElementsByTagName("link[rel='canonical']");
             link.setAttribute('href', dest + location.pathname);
             document.head.appendChild(link);
         }
