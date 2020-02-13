@@ -13,6 +13,11 @@
         function canonicalLink() {
             var link = document.getElementsByTagName("link[rel='canonical']");
             link.setAttribute('href', dest + location.pathname);
+
+            console.log("location : ", location)
+            console.log("pathname : ", location.pathname)
+            console.log("link : ", link)
+
             document.head.appendChild(link);
         }
 
@@ -31,7 +36,7 @@
 </head>
 
 <body>
-    도메인 변경으로 인한 포워딩 합니다. ㅎㅎㅎ
+    도메인 변경으로 인한 포워딩 합니다. ㅎㅎㅎㅎ
 </body>
 
 </html>
