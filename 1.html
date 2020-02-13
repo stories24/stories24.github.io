@@ -13,11 +13,6 @@
         function canonicalLink() {
             var link = document.getElementsByTagName("link")[0];
             link.setAttribute('href', dest + location.pathname);
-
-            console.log("location : ", location)
-            console.log("pathname : ", location.pathname)
-            console.log("link : ", link)
-
             document.head.appendChild(link);
         }
 
@@ -25,10 +20,10 @@
             var origin = location.origin;
             var href = location.href;
             var destination = href.replace(origin, dest);
-            // location.href = destination;
+            location.href = destination;
         }
 
-        // 실행 ㅂㅂ
+        // 실행 
         canonicalLink();
         domainRedirect();
 
@@ -36,7 +31,7 @@
 </head>
 
 <body>
-    도메인 변경으로 인한 포워딩 합니다. ㅎㅎㅎㅎ
+    도메인 변경으로 인한 포워딩 합니다.
 </body>
 
 </html>
