@@ -5,19 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>도메인 변경으로 인한 포워딩</title>
+    <link rel="canonical" href="https://blog.stories.pe.kr">
     <script type='text/javascript'>
 
         var dest = "https://blog.stories.pe.kr";
 
         function canonicalLink() {
             var link = document.createElement('link');
-            link.setAttribute('rel', 'canonical');
             link.setAttribute('href', dest + location.pathname);
             document.head.appendChild(link);
         }
 
         function domainRedirect() {
-            // var dest = "https://blog.stories.pe.kr";
             var origin = location.origin;
             var href = location.href;
             var destination = href.replace(origin, dest);
