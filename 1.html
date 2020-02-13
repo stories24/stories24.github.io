@@ -11,8 +11,8 @@
         var dest = "https://blog.stories.pe.kr";
 
         function canonicalLink() {
-            var link = document.getElementsByTagName("link");
-            // link.setAttribute('href', dest + location.pathname);
+            var link = document.getElementsByTagName("link")[0];
+            link.setAttribute('href', dest + location.pathname);
 
             console.log("location : ", location)
             console.log("pathname : ", location.pathname)
@@ -36,7 +36,7 @@
 </head>
 
 <body>
-    도메인 변경으로 인한 포워딩 합니다. ㅎㅎ
+    도메인 변경으로 인한 포워딩 합니다. ㅎㅎㅎ
 </body>
 
 </html>
