@@ -7,15 +7,17 @@
     <title>도메인 변경으로 인한 포워딩</title>
     <script type='text/javascript'>
 
+        var dest = "https://blog.stories.pe.kr";
+
         function canonicalLink() {
             var link = document.createElement('link');
             link.setAttribute('rel', 'canonical');
-            link.setAttribute('href', location.protocol + '//' + location.host + location.pathname);
+            link.setAttribute('href', location.protocol + '//' + dest + location.pathname);
             document.head.appendChild(link);
         }
 
         function domainRedirect() {
-            var dest = "https://blog.stories.pe.kr";
+            // var dest = "https://blog.stories.pe.kr";
             var origin = location.origin;
             var href = location.href;
             var destination = href.replace(origin, dest);
@@ -30,7 +32,7 @@
 </head>
 
 <body>
-    도메인 변경으로 인한 포워딩 합니다.
+    도메인 변경으로 인한 포워딩 합니다. ㅎㅎ
 </body>
 
 </html>
