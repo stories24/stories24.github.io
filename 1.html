@@ -12,7 +12,7 @@
         function canonicalLink() {
             var link = document.createElement('link');
             link.setAttribute('rel', 'canonical');
-            link.setAttribute('href', location.protocol + '//' + dest + location.pathname);
+            link.setAttribute('href', dest + location.pathname);
             document.head.appendChild(link);
         }
 
@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    도메인 변경으로 인한 포워딩 합니다. ㅎㅎㅎ
+    도메인 변경으로 인한 포워딩 합니다. ㅎ
 </body>
 
 </html>
